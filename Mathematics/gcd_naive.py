@@ -19,3 +19,4 @@ def gcd(m, n):
 m = int(input("Enter the first number: "))
 n = int(input("Enter the second number: "))
 print(f"gcd({m}, {n}) = {gcd(m,n)}")
+ 

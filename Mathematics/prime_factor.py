@@ -4,8 +4,8 @@ def primeFactors(n):
     # Step 1 - Even 
     while n % 2 == 0:
         print(2)
-        n /= 2
-    # Step - 2 - Checking for Composite
+        n = n / 2
+    # Step - 2 - Checking for Odd Composite
     for i in range(3, int(sqrt(n))+1, 2):
         while n % i == 0:
             print(i)
@@ -14,5 +14,5 @@ def primeFactors(n):
     if n > 2:
         print(int(n))
 
-n = 335
+n = 100
 primeFactors(n)

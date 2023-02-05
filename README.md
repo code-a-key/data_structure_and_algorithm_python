@@ -6,7 +6,7 @@ Welcome to Code -a- Key | DSA | Python Series | Git Repo
 
 Here is the plan for DSA...
 
-https://eatsleep-coderepeat.blogspot.com/2020/12/a-perfect-plan-for-data-structure-and.html
+https://codeakey.blogspot.com/2020/12/a-perfect-plan-for-data-structure-and.html
 
 Video Explaination: 
 

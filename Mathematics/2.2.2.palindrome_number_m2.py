@@ -1,5 +1,5 @@
 """
-PALINDROME NUMBER | METHOD - I: NAIVE
+PALINDROME NUMBER | METHOD - II: CONVERT TO STRING AND REVERSE CHECK
 
 Check whether the given number is palindrome or not
 
@@ -22,13 +22,9 @@ def check_palindrome(num: int)-> bool:
     Returns:
         bool: True if the number is palindrome, False otherwise
     """
-    rev = 0
-    temp = num
-    while temp > 0:
-        dig = temp % 10
-        rev = rev * 10 + dig
-        temp = temp // 10
-    return bool(num == rev)
+    num_str = str(num)
+    rev = num_str[::-1]
+    return bool(rev == num_str)
 
 if __name__ == '__main__':
     N = int(input("Enter the number: "))

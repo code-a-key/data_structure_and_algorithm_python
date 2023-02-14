@@ -1,5 +1,5 @@
 """
-FACTORIAL OF A NUMBER | METHOD - I: RECURSIVE
+FACTORIAL OF A NUMBER | METHOD - II: ITERATIVE
 
 Find the factorial of the given number.
 
@@ -12,7 +12,7 @@ OP:720
 Explaination: ans = 6*5*4*3*2*1 = 720
 
 TC: O(n)
-SC: O(n)
+SC: O(1)
 """
 
 def fact(num: int)-> int:
@@ -24,12 +24,15 @@ def fact(num: int)-> int:
     Returns:
         int: factorial of a number
     """
-    # Base Condition
-    if num in (1, 0):
-        return 1
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial = factorial * i
+    return f"{num}! = {factorial}"
 
-    return num*fact(num-1)
 
 if __name__ == '__main__':
     N = int(input("Enter the number:"))
-    print(f"{N}! = {fact(N)}")
+    if N < 0:
+        print("Factorial of -ve number does not exists...")
+    else:
+        print(fact(N))

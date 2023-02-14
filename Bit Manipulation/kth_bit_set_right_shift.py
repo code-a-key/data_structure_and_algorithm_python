@@ -1,7 +1,7 @@
 """
-CHECK Kth BIT IS SET OR NOT - METHOD 1: USING LEFT SHIFT OPERATOR (<<)
+CHECK Kth BIT IS SET OR NOT - METHOD 2: USING RIGHT SHIFT OPERATOR (>>)
 
-Check if kth bit is set or not. Using Left Shift Operator (<<)
+Check if kth bit is set or not. Using Right Shift Operator (>>)
 
 IP: N = 27 K = 4
 OP: SET!
@@ -23,8 +23,7 @@ def is_set(num: int, kth: int) -> bool:
     Returns:
         bool: True if kth bit is set otherwise False
     """
-    temp = 1 << (kth - 1)
-    return bool(num & temp)
+    return bool(num >> kth)
 
 
 if __name__ == '__main__':

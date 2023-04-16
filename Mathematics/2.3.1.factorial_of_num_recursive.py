@@ -15,7 +15,7 @@ TC: O(n)
 SC: O(n)
 """
 
-def fact(num: int)-> int:
+def fact(num: int) -> int:
     """factorial of a number
 
     Args:
